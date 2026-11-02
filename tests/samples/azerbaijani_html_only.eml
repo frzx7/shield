@@ -1,0 +1,11 @@
+From: Bank Support <info@kapitalbank-secure.example>
+To: customer@example.org
+Subject: =?utf-8?b?VMaPQ8SwTMSwOiBiYW5rIGhlc2FixLFuxLF6?=
+Date: Sun, 01 Nov 2026 11:00:00 +0000
+Message-ID: <fake-az-1@example.invalid>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html><body><p>Hesabınız bloklanacaq. Məlumatlarınızı təsdiqləyin.</p>
+<a href="https://kapitalbank-secure.example/verify">kapitalbank.az</a></body></html>

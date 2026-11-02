@@ -1,0 +1,11 @@
+From: Friend <friend@example.org>
+To: me@example.org
+Subject: Lunch tomorrow?
+Date: Sun, 01 Nov 2026 10:00:00 +0000
+Message-ID: <fake-benign-1@example.invalid>
+MIME-Version: 1.0
+Authentication-Results: mx.example.org; spf=pass; dkim=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+
+Hello, are you free for lunch tomorrow?
+The menu is here: https://example.org/menu.

@@ -1,0 +1,26 @@
+From: "PayPal Security" <support@paypa1.com>
+Reply-To: help@evil-site.example
+To: victim@example.org
+Subject: URGENT: verify now - account suspended
+Date: Sun, 01 Nov 2026 09:00:00 +0000
+Message-ID: <fake-phish-1@example.invalid>
+MIME-Version: 1.0
+Authentication-Results: mx.example.org; spf=fail smtp.mailfrom=paypa1.com; dkim=none; dmarc=fail (p=none)
+Content-Type: multipart/mixed; boundary="BOUNDARY"
+
+--BOUNDARY
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Your account has been locked. Confirm your identity within 24 hours.</p>
+<p><a href="http://203.0.113.7/paypal/login">paypal.com/secure</a></p>
+<p><a href="https://bit.ly/3fakeLink">Click here</a></p>
+<script>var ignored = "this must not appear in the text";</script>
+</body></html>
+--BOUNDARY
+Content-Type: application/octet-stream; name="invoice.pdf.exe"
+Content-Disposition: attachment; filename="invoice.pdf.exe"
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIGhhcm1sZXNzIHRlc3QgZmlsZS4=
+--BOUNDARY--
