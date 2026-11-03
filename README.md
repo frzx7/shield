@@ -10,9 +10,9 @@ Work in progress (v0.1 planned).
 
 - [x] Core: `Finding` model, hardware mode detection
 - [x] AI layer: provider interface, rule-only provider
-- [ ] Shield: clipboard leak detection
-- [ ] PhishGuard: email analysis and honeypot
-- [ ] Pulse: system monitor
+- [x] Shield: clipboard leak detection
+- [x] PhishGuard: email analysis and honeypot
+- [x] Pulse: system monitor
 - [ ] Optional local AI explanations (Ollama)
 
 ## Design principles
