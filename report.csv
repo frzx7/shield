@@ -1,0 +1,2 @@
+﻿seen_at,sender_address,sender_domain,brand,score,label,domains,tactics
+2026-11-03T14:04:10+00:00,support@paypa1.com,paypa1.com,paypal,100,likely phishing,203.0.113.7;bit.ly;evil-site.example;paypa1.com,dmarc_fail;double_extension;ip_address_url;link_mismatch;lookalike_domain;reply_to_mismatch;spf_fail;urgency_language;url_shortener
