@@ -1,10 +1,11 @@
 import hashlib
 import tkinter as tk
-from collections.abc import Callable
 
-from shield.ai.null_provider import NullProvider
+from collections.abc import Callable
+from shield.ai.factory import get_default_provider
 from shield.core.events import Finding
 from shield.modules.dlp.detectors import scan
+from shield.ai.factory import get_default_provider
 
 POLL_INTERVAL_MS = 1000
 
@@ -36,7 +37,7 @@ class ClipboardWatcher:
 def run() -> None:
     root = tk.Tk()
     root.withdraw()  # hide the empty window
-    provider = NullProvider()
+    #provider = NullProvider()
 
     def read_clipboard() -> str | None:
         try:
@@ -45,6 +46,7 @@ def run() -> None:
             return None
 
     def report(findings: list[Finding]) -> None:
+        provider = get_default_provider()
         for finding in findings:
             print(f"[{finding.severity.name}] {finding.kind}: {finding.evidence}")
             print(f" {provider.explain(finding)}")

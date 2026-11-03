@@ -5,7 +5,6 @@ import sys
 import time
 from datetime import datetime, timezone
 
-from shield.ai.null_provider import NullProvider
 from shield.core.events import Finding, Severity
 from shield.modules.pulse.baseline import LEARNING_HOURS, Baseline
 from shield.modules.pulse.connections import (
@@ -14,6 +13,7 @@ from shield.modules.pulse.connections import (
     read_connections,
 )
 from shield.modules.pulse.startup import diff_startup, read_startup_entries
+from shield.ai.factory import get_default_provider
 
 POLL_INTERVAL_SECONDS = 5.0
 DEFAULT_DB = "shield_pulse.db"
@@ -89,7 +89,7 @@ class PulseMonitor:
 
 
 def _print_findings(findings):
-    explainer = NullProvider()
+    explainer = get_default_provider()
     for finding in findings:
         print(f"[{finding.severity.name}] {finding.kind}: {finding.evidence}")
         print(f"    {explainer.explain(finding)}")
