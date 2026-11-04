@@ -1,9 +1,0 @@
-.shenv/
-__pycache__/
-*.pyc
-.pytest_cache/
-.vscode/
-*.db
-config.local.toml
-inbox/
-report.csv
