@@ -85,3 +85,22 @@ class OllamaProvider(AIProvider):
         except Exception:
             pass
         return self._fallback.explain(finding)
+
+def _default_get(url, timeout):
+    """This function sends a GET request and returns the decoded JSON."""
+    with urllib.request.urlopen(url, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def list_installed_models(host=DEFAULT_HOST, timeout=2.0, get_fn=None):
+    """This function returns the names of the installed models, or [] on any problem."""
+    get = get_fn or _default_get
+    try:
+        data = get(f"{host}/api/tags", timeout)
+        return [
+            item["name"]
+            for item in data["models"]
+            if isinstance(item, dict) and isinstance(item.get("name"), str)
+        ]
+    except Exception:
+        return []
