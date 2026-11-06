@@ -8,7 +8,7 @@
 
 **Shield is a local security helper for Windows.** It watches your clipboard, checks suspicious emails, and looks at what your computer does on the network. When it finds something risky, it explains the problem in plain words. Your data stays on your computer.
 
-<!-- Add a screenshot of the Shield window here: docs/screenshot-alerts.png -->
+![Shield window](docs/screenshot-alerts.png)
 
 ## Table of contents
 
@@ -45,7 +45,9 @@ Shield is small and works on your machine. It has four modules in one window. Ev
 
 ## Screenshots
 
-_Screenshots will be added before the first release._
+| Alerts | Phishing | Honeypot |
+|---|---|---|
+| ![Alerts](docs/screenshot-alerts.png) | ![Phishing](docs/screenshot-phishing.png) | ![Honeypot](docs/screenshot-honeypot.png) |
 
 ## Modules
 

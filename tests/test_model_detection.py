@@ -115,4 +115,6 @@ def test_auto_lite_gives_null_provider(monkeypatch):
 
 def test_auto_passes_the_timeout(monkeypatch):
     patch_installed(monkeypatch, BOTH)
-    assert choose_provider_auto("full", timeout=45.0).timeout == 45.0
+    provider = choose_provider_auto("full", timeout=45.0)
+    assert isinstance(provider, OllamaProvider)
+    assert provider.timeout == 45.0
