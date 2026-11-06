@@ -159,13 +159,17 @@ The AI never edits Shield's code and never changes a verdict on its own. If an o
 
 ## Getting started
 
+   ### Download (easiest)
+
+   Download `Shield.exe` from the [Releases page](https://github.com/frzx7/shield/releases), then double-click it. Python is not needed. Windows may show an "unknown publisher" warning because the file is not code-signed.
+
 ### Requirements
 
 - Windows 10 or 11
 - Python 3.13 (this is the version it was tested with)
 - Optional: [Ollama](https://ollama.com) for AI explanations
 
-### Install
+### Install from source
 
 ```powershell
 git clone https://github.com/frzx7/shield.git
@@ -266,4 +270,4 @@ MIT License. See the `LICENSE` file.
 
 ## Credits
 
-The idea, the goals and the direction (a flexible tool with a strong role for local AI, and protection against being avoided) come from the project owner. The code was written with AI assistance (Claude). The owner runs and tests everything.
+The idea, the goals and the direction (a flexible tool with a strong role for local AI, and protection against being avoided) come from the project owner. The code was written with AI assistance (Claude). The owner checks, manages, and tests everything.
