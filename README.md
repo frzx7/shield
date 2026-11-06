@@ -176,7 +176,8 @@ pip install -r requirements.txt
 ### Run the window
 
 ```powershell
-python -m shield.ui.app
+python -m shield
+python -m shield --info #prints the detected mode.
 ```
 
 The window has three tabs: **Alerts** (clipboard and system alerts), **Phishing** (pick an `.eml` file) and **Honeypot** (pick a folder, then press Start). The **Test alert** button shows you how an alert and its AI explanation look.
